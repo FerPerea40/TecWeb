@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width: 100%;
+    overflow: hidden;
+    background: #5e2129;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  header .logo {
+    color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+    float: left;
+  }
+  
+  header nav {
+    line-height: 100px;
+    text-align: center;
+  }
+  
+  header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    transition: all 500ms ease;
+  }
+  
+  header nav a:hover {
+    background: #903;
+    border-radius: 50px;
+  }
+  
+  .foter {
+    width: 100%;
+    overflow: hidden;
+  
+    background-color: #666;
+    position: fixed;
+    bottom: 0;
+  
+    text-align: justify;
+    color: #fff;
+  }
+  
+  .ipn_footer {
+    font-size: 0.8em;
+  }
+  
+  .footer_text {
+    font-size: 0.63em;
+  }
+  
+  .text_form {
+    text-align: left;
+    font-weight: bold;
+    color: #5e2129;
+    font-size: 1em;
+    padding-top: 1.2em;
+    padding-left: 0.3em;
+  }
+  
+  .text_form2 {
+    text-align: left;
+    font-weight: bold;
+    color: #5e2129;
+    font-size: 3em;
+    padding-top: 1.2em;
+    padding-left: 0.3em;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .footer_text {
+      font-size: 0.33em;
+    }
+  }

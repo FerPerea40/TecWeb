@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Modificar datos medicamento</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="js/validar_sesion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="paciente.html" id="paciente">Paciente</a>
+          <a href="Orientacion/paciente.html" id="paciente_Orientacion">Paciente</a>
+          <a href="medico.html" id="medico">Médico </a>
+          <a href="Orientacion/orientador.html" id="orientador">Orientador </a>
+          <a href="consultar.html" id="consultar">Consulta </a>
+          <a href="Orientacion/consultar.html" id="consultar_Orientacion">Consulta </a>
+          <a href="reportes.html" id="reportes">Reportes </a>
+          <a href="Orientacion/reportes.html" id="reportes_Orientacion">Reportes Orientacion</a>
+          <a href="insumos.html" id="insumos">Insumos </a>
+          <a href="Orientacion/citas.html" id="cita">Citas </a>
+          <a href="contrasena.html" id="contrasena">Contraseña </a>
+          <a href="salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container2">
+      <div class="form_top">
+        <h2>
+          <span>Modificar datos de un medicamento o material médico</span>
+        </h2>
+        <form class="form_reg" method="POST" action="" id="form_login">
+          <p class="text_form">Selecionar Material médico o Medicamento</p>
+          <select class="input" name="select" id="select" required> </select>
+          <input
+            class="btn_submit"
+            type="button"
+            value="Selecionar"
+            name="selecionar"
+            id="selecionar"
+          />
+
+          <p class="text_form">Nombre del medicamento o material médico</p>
+          <input
+            type="text"
+            class="input"
+            placeholder="NOMBRE DEL MEDICAMENTO O MATERIAL MÉDICO"
+            id="nombre"
+            name="nombre"
+            required
+          />
+          <p class="text_form">Tipo de presentación</p>
+          <select class="input" required id="presentacion" name="presentacion">
+            <option value="1"> Pastillas </option>
+            <option value="2"> Capsulas </option>
+            <option value="3"> Jarabe</option>
+            <option value="4"> Medicamento de un solo uso por unidad </option>
+            <option value="5">
+              No medicamento de un solo uso por unidad
+            </option>
+          </select>
+          <p class="text_form">Laboratorio o empresa</p>
+          <input
+            id="Lab_Empresa"
+            name="Lab_Empresa"
+            type="text"
+            class="input"
+            placeholder="LABORATORIO O EMPRESA"
+            required
+          />
+          <p class="text_form">Componente químico</p>
+          <input
+            id="componente_quimico"
+            name="componente_quimico"
+            type="text"
+            class="input"
+            placeholder="COMPONENTE QUÍMICO"
+            id="quimico_1"
+          />
+          <p class="text_form">Concentración</p>
+          <input
+            id="concentracion"
+            name="concentracion"
+            type="text"
+            class="input"
+            placeholder="CONCENTRACIÓN"
+            id="concentracion_1"
+            required
+          />
+          <input id="Id_Mat_Med" name="Id_Mat_Med" type="hidden" value="" />
+          <input type="submit" class="btn_submit" value="Modificar" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\modificar_medicamento.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registro Orientador</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="../js/validar_sesion.js"></script>
+    <script src="js\verificar_usuario_admin.js"></script>
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="../paciente.html" id="paciente">Paciente</a>
+          <a href="../Orientacion/paciente.html" id="paciente_Orientacion">Paciente</a>
+          <a href="../medico.html" id="medico">Médico </a>
+          <a href="../Orientacion/orientador.html" id="orientador">Orientador </a>
+          <a href="../consultar.html" id="consultar">Consulta </a>
+          <a href="../Orientacion/consultar.html" id="consultar_Orientacion">Consulta </a>
+          <a href="../reportes.html" id="reportes">Reportes </a>
+          <a href="../Orientacion/reportes.html" id="reportes_Orientacion">Reportes Orientacion</a>
+          <a href="../insumos.html" id="insumos">Insumos </a>
+          <a href="../Orientacion/citas.html" id="cita">Citas </a>
+          <a href="../contrasena.html" id="contrasena">Contraseña </a>
+          <a href="../salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container2">
+      <div class="form_top">
+        <h2><span>Registrar Orientador</span></h2>
+        <form class="form_reg" action="#" method="POST" id="form_login">
+          <p class="text_form">Nombre</p>
+          <input
+            name="NOMBRES"
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="NOMBRES"
+            required
+          />
+          <p class="text_form">Primer apellido</p>
+          <input
+            name="P_APELLIDO"
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="PRIMER APELLIDO"
+            required
+          />
+          <p class="text_form">Segundo apellido</p>
+          <input
+            name="S_APELLIDO"
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="SEGUNDO APELLIDO"
+          />
+          <p class="text_form">Fecha de nacimiento</p>
+          <input name="FECHA_NACIMIENTO" class="input" type="date" required />
+          <p class="text_form">Sexo</p>
+          <select class="input" name="SEXO" required>
+            <option value="H"> HOMBRE </option>
+            <option value="M"> MUJER </option>
+          </select>
+          <p class="text_form">CURP</p>
+          <input
+            name="CURP"
+            class="input"
+            type="text"
+            minlength="18"
+            maxlength="18"
+            placeholder="CURP"
+            required
+          />
+          <p class="text_form">CEDULA</p>
+          <input
+            name="CEDULA"
+            id="CEDULA"
+            class="input"
+            type="text"
+            maxlength="25"
+            placeholder="CÉDULA PROFESIONAL"
+            required
+          />
+          <h6 id="m_ced"></h6>
+          <p class="text_form">Teléfono personal (10 dígitos sin espacio)</p>
+          <input
+            name="TEL"
+            class="input"
+            type="tel"
+            placeholder="TELÉFONO (10 dígitos sin espacio)"
+            pattern="[0-9]{10}"
+            required
+          />
+          <p class="text_form">Teléfono emergencia (10 dígitos sin espacio)</p>
+          <input
+            name="TEL_EMERGENCIA"
+            class="input"
+            type="text"
+            maxlength="20"
+            placeholder="TELÉFONO EN CASO DE EMERGENCIA (10 dígitos sin espacio)"
+          />
+          <p class="text_form2">Datos de Usuario</p>
+          <p class="text_form">Usuario</p>
+          <input
+            name="Usuario"
+            id="user"
+            class="input"
+            type="text"
+            minlength="5"
+            maxlength="100"
+            placeholder="USUARIO"
+            required
+          />
+          <h6 id="m_user"></h6>
+          <h6 id="usuarioRepetido"></h6>
+          <p class="text_form">Contraseña</p>
+          <input
+            name="pass1"
+            id="pass1"
+            class="input"
+            type="password"
+            minlength="8"
+            maxlength="100"
+            placeholder="CONTRASEÑA"
+            required
+          />
+          <h6 id="vPass1"></h6>
+          <p class="text_form">Repetir Contraseña</p>
+          <input
+            name="pass2"
+            id="pass2"
+            class="input"
+            type="password"
+            minlength="8"
+            maxlength="100"
+            placeholder="REPETIR CONTRASEÑA"
+            required
+          />
+          <h6 id="validacion"></h6>
+          <input type="submit" class="btn_submit" value="REGISTRAR" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\registrar_orientador.js"></script>
+    <script src="js\validar_contra.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registro Paciente</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="../js/validar_sesion.js"></script>
+    <script src="js\verificar_usuario_orientacion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="../paciente.html" id="paciente">Paciente</a>
+          <a href="../Orientacion/paciente.html" id="paciente_Orientacion"
+            >Paciente</a
+          >
+          <a href="../medico.html" id="medico">Médico </a>
+          <a href="../Orientacion/orientador.html" id="orientador"
+            >Orientador
+          </a>
+          <a href="../consultar.html" id="consultar">Consulta </a>
+          <a href="../Orientacion/consultar.html" id="consultar_Orientacion"
+            >Consulta
+          </a>
+          <a href="../reportes.html" id="reportes">Reportes </a>
+          <a href="../Orientacion/reportes.html" id="reportes_Orientacion"
+            >Reportes Orientacion</a
+          >
+          <a href="../insumos.html" id="insumos">Insumos </a>
+          <a href="../Orientacion/citas.html" id="cita">Citas </a>
+          <a href="../contrasena.html" id="contrasena">Contraseña </a>
+          <a href="../salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container2">
+      <div class="form_top">
+        <h2><span>Registrar Paciente</span></h2>
+        <form class="form_reg" method="POST" action="" id="form_reg_paciente">
+          <p class="text_form">
+            Boleta o número de trabajador o código de empleado externo
+          </p>
+          <input
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="Número de boleta, número de trabajador, codigo de trabajador externo"
+            name="boleta"
+            id="boleta"
+            required
+          />
+
+          <h6 id="m_boleta"></h6>
+          <h6 id="m2_boleta"></h6>
+          <h6>
+            En caso de no contar con número de trabajador dar clic en el signo
+            de interrogación
+            <span
+              id="signo_pregunta"
+              onmouseover="style.cursor ='default'"
+              onmouseout="style.cursor ='auto'"
+            >
+              &#10067;</span
+            >
+          </h6>
+          <p class="text_form">Nombres</p>
+          <input
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="NOMBRES"
+            name="nombre"
+            required
+          />
+          <p class="text_form">Primer apellido</p>
+          <input
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="PRIMER APELLIDO"
+            name="p_apellido"
+            required
+          />
+          <p class="text_form">Segundo apellido</p>
+          <input
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="SEGUNDO APELLIDO"
+            name="s_apellido"
+          />
+          <p class="text_form">Fecha de nacimiento</p>
+          <input class="input" type="date" name="fecha" required />
+          <p class="text_form">Sexo</p>
+          <select class="input" name="sexo" id="sexo" required>
+            <option value="H"> HOMBRE </option>
+            <option value="M"> MUJER </option>
+          </select>
+
+          <!-- <p class="text_form">CURP</p>
+            <input
+            name="CURP"
+            class="input"
+            type="text"
+            minlength="18"
+            maxlength="18"
+            placeholder="CURP"
+          /> --><!-- No se si sea necesaria la CURP para la psicologa-->
+          <p class="text_form">Teléfono personal (10 dígitos sin espacios)</p>
+          <input
+            name="TEL"
+            class="input"
+            type="tel"
+            placeholder="TELÉFONO (10 dígitos sin espacio)"
+            pattern="[0-9]{10}"
+            required
+          />
+          <p class="text_form">
+            Teléfono de emergencia (10 dígitos sin espacio)
+          </p>
+          <input
+            name="TEL_EMERGENCIA"
+            class="input"
+            type="tel"
+            pattern="[0-9]{10}"
+            placeholder="TELÉFONO EN CASO DE EMERGENCIA (10 dígitos sin espacio)"
+            required
+          />
+          <p class="text_form">Nombre de contacto de Emergencia</p>
+          <input
+            name="NOM_TEL_EMERGENCIA"
+            class="input"
+            type="text"
+            maxlength="40"
+            placeholder="NOMBRE DE CONTACTO DE EMERGENCIA"
+            id="NOM_TEL_EMERGENCIA"
+            required
+          />
+
+          <p class="text_form">Tipo de paciente</p>
+          <select
+            class="input"
+            name="tipo_paciente"
+            id="tipo_paciente"
+            required
+          >
+            <option value="1"> Alumno </option>
+            <option value="2"> Docente </option>
+            <option value="3"> PAAE</option>
+            <option value="4"> Externo</option>
+            <!-- El externo puede ser por la atención familiar-->
+          </select>
+
+          <p class="text_form" id="text_carrera">Carrera</p>
+          <select class="input" name="CARRERA" id="carrera">
+            <option value="1"> Ingeniería Metalúrgica </option>
+            <option value="2"> Ingeniería Mecatrónica </option>
+            <option value="3"> Ingeniería en Alimentos</option>
+            <option value="4"> Ingeniería Ambiental </option>
+            <option value="5"> Ingeniería en Sistemas </option>
+          </select>
+
+          <p class="text_form" id="text_academia">Academia</p>
+          <select class="input" name="Academia" id="academia">
+            <option value="1"> Bioingeniería </option>
+            <option value="2"> Físico-Matemáticas </option>
+            <option value="3"> Mecatrónica </option>
+            <option value="4"> Químico-Biológicas </option>
+            <option value="5"> Sociales e Inglés </option>
+            <option value="6"> Metalúrgica </option>
+            <option value="7"> Ciencias de la computación </option>
+          </select>
+          <p class="text_form">Observaciones adicionales</p>
+          <textarea
+            name="Observaciones"
+            id="Observaciones"
+            class="input"
+            placeholder="Observaciones adicionales"
+            rows="4"
+          ></textarea>
+
+          <input type="submit" class="btn_submit" value="REGISTRAR" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\registrar_paciente_orientacion.js"></script>
+    <script src="js/registrar_paciente_GUI.js"></script>
+  </body>
+</html>

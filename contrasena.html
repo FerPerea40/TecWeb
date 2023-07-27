@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta lang="es" />
+    <title>Contraseña</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="js/validar_sesion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="paciente.html" id="paciente">Paciente</a>
+          <a href="Orientacion/paciente.html" id="paciente_Orientacion">Paciente</a>
+          <a href="medico.html" id="medico">Médico </a>
+          <a href="Orientacion/orientador.html" id="orientador">Orientador </a>
+          <a href="consultar.html" id="consultar">Consulta </a>
+          <a href="Orientacion/consultar.html" id="consultar_Orientacion">Consulta </a>
+          <a href="reportes.html" id="reportes">Reportes </a>
+          <a href="Orientacion/reportes.html" id="reportes_Orientacion">Reportes Orientacion</a>
+          <a href="insumos.html" id="insumos">Insumos </a>
+          <a href="Orientacion/citas.html" id="cita">Citas </a>
+          <a href="contrasena.html" id="contrasena">Contraseña </a>
+          <a href="salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form_top" id="form_login">
+        <h2><span> Modificar contraseña</span></h2>
+
+        <form class="form_reg" method="POST" id="form_login">
+          <p class="text_form">Contraseña</p>
+          <input
+            id="pass1"
+            name="pass1"
+            minlength="8"
+            class="input"
+            type="password"
+            maxlength="100"
+            placeholder="CONTRASEÑA"
+            required
+          />
+          <p class="text_form">Repetir contraseña</p>
+          <input
+            id="pass2"
+            name="pass2"
+            minlength="8"
+            class="input"
+            type="password"
+            maxlength="100"
+            placeholder="REPETIR CONTRASEÑA"
+            required
+          />
+          <h6 id="validacion"></h6>
+          <input type="submit" class="btn_submit" value="Modificar" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\contrasena.js"></script>
+  </body>
+</html>

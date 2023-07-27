@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ver consultas</title>
+    <link rel="stylesheet" href="../Orientacion/Estilos/styles.css" />
+    <link rel="stylesheet" href="../Orientacion/Estilos/formstyles.css" />
+    <script src="../js/validar_sesion.js"></script>
+    <script src="js/verificar_usuario_orientacion.js"></script>
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="../paciente.html" id="paciente">Paciente</a>
+          <a href="../Orientacion/paciente.html" id="paciente_Orientacion">Paciente</a>
+          <a href="../medico.html" id="medico">Médico </a>
+          <a href="../Orientacion/orientador.html" id="orientador">Orientador </a>
+          <a href="../consultar.html" id="consultar">Consulta </a>
+          <a href="../Orientacion/consultar.html" id="consultar_Orientacion">Consulta </a>
+          <a href="../reportes.html" id="reportes">Reportes </a>
+          <a href="../Orientacion/reportes.html" id="reportes_Orientacion">Reportes Orientacion</a>
+          <a href="../insumos.html" id="insumos">Insumos </a>
+          <a href="../Orientacion/citas.html" id="cita">Citas </a>
+          <a href="../contrasena.html" id="contrasena">Contraseña </a>
+          <a href="../salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form_top" id="ocultar">
+        <h2><span>Historial de Consultas</span></h2>
+        <form class="form_reg" method="POST" action="" id="form_login">
+          <p class="text_form">Búsqueda</p>
+
+          <input
+            type="text"
+            class="input"
+            maxlength="500"
+            name="boleta"
+            id="boleta"
+            placeholder="Número de boleta, número de trabajador, codigo de trabajador externo"
+            required
+          />
+          <h6 id="m_boleta"></h6>
+          <h6 id="m2_boleta"></h6>
+
+          <input type="submit" class="btn_submit" value="Buscar" />
+        </form>
+
+        <div id="resultados" class="resultados"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/footer.js"></script> 
+    <script src="../Orientacion/js/ver_consulta_GUI.js"></script>
+    <script src="../Orientacion/js/ver_consulta.js"></script>
+  </body>
+</html>

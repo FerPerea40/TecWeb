@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta lang="es" />
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">
+          UPIIZ
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form_top">
+        <h2>> <span>Iniciar Sesión</span></h2>
+
+        <form class="form_reg" id="form_login" method="post">
+          <p class="text_form">USUARIO</p>
+          <input
+            id="usuario"
+            name="usuario"
+            class="input"
+            type="text"
+            placeholder="&#128100; USUARIO"
+            required
+          />
+          <p class="text_form">CONTRASEÑA</p>
+          <input
+            id="password"
+            name="password"
+            class="input"
+            type="password"
+            placeholder="&#128273; CONTRASEÑA"
+            required
+          />
+
+          <input type="submit" class="btn_submit" value="INICIAR SESIÓN" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\login.js"></script>
+  </body>
+</html>

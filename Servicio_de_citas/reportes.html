@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta lang="es" />
+    <title>Generar reportes</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="js/validar_sesion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="horario.html" id="horario"> Horario </a>
+          <a href="reservar_horario.html" id="reservar_horario"> Reservar Horario </a>
+          <a href="cambiar_horas.html" id="cambiar"> Cambiar Horas</a>
+          <a href="reportes.html" id="reportes"> Reportes </a>
+          <a href="contrasena.html" id="contrasena">Contraseña </a>
+          <a href="salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" id="content">
+      <div class="form_top">
+        <h2><span> Generar reportes </span></h2>
+
+        <form class="form_reg" action="" method="POST" id="form_login">
+          <p class="text_form">Fecha de inicio</p>
+          <input
+            class="input"
+            type="date"
+            name="fecha_i"
+            id="fecha_i"
+            required
+          />
+          <p class="text_form" name="text_fecha_f" id="text_fecha_f">
+            Fecha de fin
+          </p>
+          <input
+            class="input"
+            type="date"
+            name="fecha_f"
+            id="fecha_f"
+            required
+          />
+
+          <input type="submit" class="btn_submit" value="Generar reporte" />
+        </form>
+
+        <div id="resultados"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/reportes.js"></script>
+  </body>
+</html>

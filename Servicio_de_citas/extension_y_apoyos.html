@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta lang="es" />
+    <title>Citas ➜Extensión y apoyos educativo</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">SSEIS IPN</div>
+      </div>
+    </header>
+
+    <div class="container2">
+      <div class="div_botones" id="div_botones">
+        <h2><span>Elegir día </span></h2>
+        <br />
+        <button class="btn_menu2" id="btn_lunes">Lunes</button>
+        <button class="btn_menu2" id="btn_martes">Martes</button>
+        <button class="btn_menu2" id="btn_miercoles">Miércoles</button>
+        <button class="btn_menu2" id="btn_jueves">Jueves</button>
+        <button class="btn_menu2" id="btn_viernes">Viernes</button>
+        <br />
+
+        <br />
+        <h5>
+          &#128073;Las citas se agendarán a más tardar a las 13:59 hrs del día
+          anterior de la fecha deseada.
+        </h5>
+        <h5>
+          &#128073;Las citas de la próxima semana se podrán agendar a partir de
+          las 16:00 hrs del viernes.
+        </h5>
+        <h5>
+          👀 Por email se avisará si existe una cancelación de la cita, por
+          favor estar al pendiente.
+        </h5>
+      </div>
+
+      <div class="form_top" id="div_datos" style="display: none">
+        <form class="form_reg" id="form" method="post">
+          <p class="text_form">NOMBRE COMPLETO</p>
+          <input
+            id="nombre"
+            name="nombre"
+            class="input"
+            type="text"
+            maxlength="200"
+            placeholder="&#128100; Nombre completo"
+            required
+          />
+          <p class="text_form">Número de boleta o número de trabajador</p>
+          <input
+            id="boleta"
+            name="boleta"
+            class="input"
+            type="text"
+            maxlength="25"
+            placeholder="&#128179; Número de boleta o número de trabajador"
+            required
+          />
+          <h6>
+            En caso de no contar con boleta o número de trabajador dar clic en
+            el signo de interrogación
+            <span
+              id="signo_pregunta"
+              onmouseover="style.cursor ='default'"
+              onmouseout="style.cursor ='auto'"
+            >
+              &#10067;</span
+            >
+          </h6>
+          <p class="text_form">Correo electrónico</p>
+          <input
+            id="email"
+            name="email"
+            class="input"
+            type="text"
+            maxlength="100"
+            placeholder="&#128231; Correo electrónico"
+            required
+          />
+
+          <p class="text_form">Motivo</p>
+          <select class="input" name="motivo" id="motivo">
+            <option value="0" disabled>
+              ↧ Las siguientes actividades tienen una duración de 5 minutos:
+            </option>
+            <option value="1">Becas</option>
+            <option value="2">Servicio social</option>
+            <option value="3">Movilidad</option>
+            <option value="4">Cultura</option>
+            <option value="5">Deportes</option>
+            <option value="6">Otro</option>
+          </select>
+
+          <p class="text_form">Horarios</p>
+          <select class="input" name="horario" id="horario" required></select>
+          <a href="https://www.gob.mx/aviso_de_privacidad" target="_blank"
+            ><h6>Ver políticas de privacidad y uso de Datos</h6></a
+          >
+          <h6>
+            He leído y acepto los
+            <a href="https://www.gob.mx/terminos" target="_blank">términos y condiciones </a
+            ><input type="checkbox" required />
+          </h6>
+          <input
+            type="submit"
+            class="btn_submit"
+            value="Guardar cita "
+            id="btn_generar_cita"
+          />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\moment.js"></script>
+    <script src="js\moment-timezone-with-data.js"></script>
+    <script src="js\citas.js?v2"></script>
+    <script src="js\extension_y_apoyos_GUI.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Consultar</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="js/validar_sesion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="paciente.html" id="paciente">Paciente</a>
+          <a href="Orientacion/paciente.html" id="paciente_Orientacion">Paciente</a>
+          <a href="medico.html" id="medico">Médico </a>
+          <a href="Orientacion/orientador.html" id="orientador">Orientador </a>
+          <a href="consultar.html" id="consultar">Consulta </a>
+          <a href="Orientacion/consultar.html" id="consultar_Orientacion">Consulta </a>
+          <a href="reportes.html" id="reportes">Reportes </a>
+          <a href="Orientacion/reportes.html" id="reportes_Orientacion">Reportes Orientacion</a>
+          <a href="insumos.html" id="insumos">Insumos </a>
+          <a href="Orientacion/citas.html" id="cita">Citas </a>
+          <a href="contrasena.html" id="contrasena">Contraseña </a>
+          <a href="salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container2">
+      <div class="form_top">
+        <h2><span>Consulta</span></h2>
+        <form class="form_reg" method="POST" action="" id="form_login">
+          <p class="text_form">Busqueda</p>
+          <input
+            class="input"
+            type="text"
+            maxlength="500"
+            placeholder="Número de boleta, número de trabajador, codigo de trabajador externo"
+            name="boleta"
+            id="boleta"
+            required
+          />
+          <h6 id="m_boleta"></h6>
+          <h6 id="m2_boleta"></h6>
+          <input
+            class="btn_submit"
+            type="button"
+            value="Selecionar"
+            name="selecionar"
+            id="selecionar"
+          />
+
+          <p class="text_form">Masa en Kg</p>
+          <input
+            class="input"
+            type="number"
+            max="700"
+            min="1"
+            step=".1"
+            placeholder="MASA EN KG "
+            name="masa"
+            id="masa"
+          />
+          <p class="text_form">Altura en cm</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step="1"
+            placeholder="ALTURA EN CENTÍMETROS "
+            name="altura"
+            id="altura"
+          />
+          <p class="text_form" name="edad" id="edad"></p>
+          <p class="text_form" name="fecha" id="fecha"></p>
+          <p class="text_form">Tensión arterial en mmHg</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step=".1"
+            placeholder="TENSIÓN ARTERIAL EN mmHg "
+            name="tension_arterial"
+            id="tension_arterial"
+          />
+          <p class="text_form">Frecuencia cardíaca en pulsaciones por minuto</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step=".1"
+            placeholder="FRECUENCIA CARDÍACA EN PULSACIONES POR MINUTO "
+            name="frecuencia_cardiaca"
+            id="frecuencia_cardiaca"
+          />
+          <p class="text_form">
+            Frecuentcia respiratoria en respiraciones por minuto
+          </p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step=".1"
+            placeholder="FRECUENCIA RESPIRATORIA EN RESPIRACIONES POR MINUTO"
+            name="frecuencia_respiratoria"
+            id="frecuencia_respiratoria"
+          />
+          <p class="text_form">Temperatura en grados celsius</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step=".1"
+            placeholder="TEMPERATURA EN GRADOS CELSIUS "
+            name="temperatura_corp"
+            id="temperatura_corp"
+          />
+          <p class="text_form">Porcentaje de saturación de oxigeno en sangre (%)</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            max="100"
+            step=".1"
+            placeholder="SATURACIÓN DE OXIGENO EN SANGRE"
+            name="oxigeno_sangre"
+            id="oxigeno_sangre"
+          />
+          <p class="text_form">Nivel de glucosa sanguínea (mmol/l)</p>
+          <input
+            class="input"
+            type="number"
+            min="0"
+            step=".1"
+            placeholder="NIVEL DE GLUCOSA SANGUÍNEA (mmol/l)"
+            name="glucosa"
+            id="glucosa"
+          />
+          <p class="text_form">OTROS</p>
+          <textarea
+            id="otros"
+            name="otros"
+            class="input"
+            placeholder="Otros"
+            rows="2"
+          ></textarea>
+          <p class="text_form">Padecimiento actual</p>
+          <textarea
+            id="padecimiento_actual"
+            name="padecimiento_actual"
+            class="input"
+            placeholder="Padecimiento actual"
+            rows="4"
+          ></textarea>
+          <p class="text_form">Resumen del interrogatorio</p>
+          <textarea
+            id="resumen_interrogatorio"
+            name="resumen_interrogatorio"
+            class="input"
+            placeholder="Resumen del interrogatorio"
+            rows="4"
+          ></textarea>
+          <p class="text_form">
+            Resultado de estudios de los servicios auxiliares de diagnóstico y
+            tratamiento
+          </p>
+          <textarea
+            id="resultados_servicios_aux"
+            name="resultados_servicios_aux"
+            class="input"
+            placeholder="Resultado de estudios de los servicios auxiliares de diagnóstico y tratamiento"
+            rows="4"
+          ></textarea>
+          <p class="text_form">Diagnóstico(s) o problemas clínicos</p>
+          <textarea
+            id="diagnostico"
+            name="diagnostico"
+            class="input"
+            placeholder="Diagnóstico(s) o problemas clínicos"
+            rows="4"
+          ></textarea>
+          <p class="text_form">
+            Plan de estudio y/o Tratamiento (indicaciones médicas, viá, dosis,
+            periodicidad)
+          </p>
+          <textarea
+            id="tratamiento"
+            name="tratamiento"
+            class="input"
+            placeholder="Plan de estudio y/o Tratamiento (indicaciones médicas, viá, dosis, periodicidad)"
+            rows="4"
+          ></textarea>
+
+          <input type="submit" class="btn_submit" value="Guardar" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js\footer.js"></script>
+    <script src="js\consultar.js"></script>
+  </body>
+</html>

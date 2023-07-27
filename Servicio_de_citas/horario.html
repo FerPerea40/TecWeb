@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta lang="es" />
+    <title>Horario</title>
+    <link rel="stylesheet" href="Estilos/styles.css" />
+    <link rel="stylesheet" href="Estilos/formstyles.css" />
+    <script src="js/validar_sesion.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <a href="horario.html" id="horario"> Horario </a>
+          <a href="reservar_horario.html" id="reservar_horario"> Reservar Horario </a>
+          <a href="cambiar_horas.html" id="cambiar"> Cambiar Horas</a>
+          <a href="reportes.html" id="reportes"> Reportes </a>
+          <a href="contrasena.html" id="contrasena">Contraseña </a>
+          <a href="salir.html" id="salir">Salir </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container2" id="content">
+      <div class="form_top">
+        <h2><span> Horario </span></h2>
+
+        <form class="form_reg" action="" method="POST" id="form_login">
+          <p class="text_form">Día</p>
+          <input
+            class="input"
+            type="date"
+            name="fecha"
+            id="fecha"
+            required
+          />
+          
+          <input type="submit" class="btn_submit" value="Seleccionar" />
+        </form>
+
+        <div id="resultados"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foter">
+        <div class="wrapper">
+          <p class="ipn_footer">INSTITUTO POLITÉCNICO NACIONAL</p>
+          <p class="footer_text" id="footer_text"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/citas.js"></script>
+    <script src="js/horario.js"></script>
+  </body>
+</html>
